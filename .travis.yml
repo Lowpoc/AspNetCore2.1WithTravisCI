@@ -3,7 +3,6 @@ solution: Project.sln
 dotnet: 2.1.401
 script:
   - dotnet build Api/
-  - grep "Log" build.log
 branches:
   only:
   - master
