@@ -1,5 +1,5 @@
 language: csharp
-solution: Api.sln
+solution: Project.sln
 dotnet: 2.1.401
 script:
   - dotnet build Api/
