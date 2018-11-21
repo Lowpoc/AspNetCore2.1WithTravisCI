@@ -1,0 +1,9 @@
+language: csharp
+solution: Api.sln
+dotnet: 2.1.401
+script:
+  - dotnet restore
+  - dotnet build Api/
+  - grep "Log" build.log
+install:
+  - nuget restore Api.sln  
