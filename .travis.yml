@@ -8,3 +8,6 @@ branches:
   - master
   - stable
   - homol
+ notifications:
+    slack: travisaspnetcore21:9G5NGiQxRduCX875uTL3POAT
+      on_success: always
