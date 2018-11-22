@@ -11,7 +11,7 @@ branches:
 notifications:
   slack:
       rooms:
-      - travisaspnetcore21:9G5NGiQxRduCX875uTL3POAT#notifications
+        - travisaspnetcore21:9G5NGiQxRduCX875uTL3POAT#notifications
     on_success: always
     on_failure: always
     template:
