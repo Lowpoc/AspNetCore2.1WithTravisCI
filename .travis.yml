@@ -2,16 +2,16 @@ language: csharp
 solution: Project.sln
 dotnet: 2.1.401
 script:
-- dotnet build Api/
+  - dotnet build Api/
 branches:
   only:
-  - master
-  - stable
-  - homol
+    - master
+    - stable
+    - homol
 notifications:
   slack:
-      rooms:
-        - travisaspnetcore21:9G5NGiQxRduCX875uTL3POAT#notifications
+    rooms:
+      - travisaspnetcore21:9G5NGiQxRduCX875uTL3POAT#notifications
     on_success: always
     on_failure: always
     template:
