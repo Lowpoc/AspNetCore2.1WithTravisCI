@@ -19,7 +19,8 @@ notifications:
       - "Execution time: *%{duration}*"
       - "Message: %{message}"
   email:
-    - lowpoc@developer@gmail.com
-    - marcus.vinicius.3007@gmail.com
+    recipients:
+      - lowpoc@developer@gmail.com
+      - marcus.vinicius.3007@gmail.com
     on_success: always
     on_failure: always
