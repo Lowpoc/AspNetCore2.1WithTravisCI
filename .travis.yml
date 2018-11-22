@@ -12,9 +12,14 @@ notifications:
   slack:
     rooms:
       - travisaspnetcore21:9G5NGiQxRduCX875uTL3POAT#notifications
-    on_success: change
-    on_failure: change
+    on_success: always
+    on_failure: always
     template:
       - "Repo `%{repository_slug}` *%{result}* build (<%{build_url}|#%{build_number}>) for commit (<%{compare_url}|%{commit}>) on branch `%{branch}`."
       - "Execution time: *%{duration}*"
       - "Message: %{message}"
+  email:
+    recipients:
+      - lowpoc@developer@gmail.com
+    on_success: always
+    on_failure: always
